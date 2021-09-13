@@ -1,0 +1,34 @@
+{
+  "name": "tsc-struct",
+  "version": "1.0.0",
+  "description": "A collection of strongly typed data structures in TypeScript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rorazliev/tsc-struct.git"
+  },
+  "keywords": [
+    "computer-science",
+    "data-structures",
+    "hash-table",
+    "javascript",
+    "jest",
+    "linked-list",
+    "queue",
+    "nodejs",
+    "stack",
+    "typescript"
+  ],
+  "author": "Ruslan Orazliev (https://linkedin.com/in/rorazliev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rorazliev/tsc-struct/issues"
+  },
+  "homepage": "https://github.com/rorazliev/tsc-struct#readme"
+}
