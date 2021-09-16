@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+.vscode
+lib
+node_modules
+coverage
+
+jest.config.ts
+tsconfig.json
