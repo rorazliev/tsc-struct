@@ -31,6 +31,10 @@
     "url": "https://github.com/rorazliev/tsc-struct/issues"
   },
   "homepage": "https://github.com/rorazliev/tsc-struct#readme",
+  "dependencies": {
+    "@types/lodash.isequal": "^4.5.5",
+    "lodash.isequal": "^4.5.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.5",
