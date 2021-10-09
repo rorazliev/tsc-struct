@@ -10,7 +10,7 @@ Represents a node in a `LinkedList<T>`.
 - [Methods](#methods)
   - [LinkedListNode&lt;T>.getKey()](#getKey)
 
-## Constructor <a name="constructor" />
+### Constructor <a name="constructor" />
 
 Initializes a new instance of the `LinkedListNode<T>` class, containing the specified value.
 
