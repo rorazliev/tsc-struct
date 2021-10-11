@@ -1,0 +1,11 @@
+docs
+node_modules
+src
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.json
+.gitattributes
+.gitignore
+jest.config.ts
+tsconfig.json
