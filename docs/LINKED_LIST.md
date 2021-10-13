@@ -20,7 +20,7 @@ Represents a singly linked list.
   - [LinkedList&lt;T>.toArray()](#toArray)
 
 
-### Constructor <a name="constructor" />
+## Constructor <a name="constructor" />
 
 Initializes a new instance of the `LinkedList<T>` class that is empty.
 
