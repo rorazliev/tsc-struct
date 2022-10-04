@@ -11,7 +11,7 @@ jobs:
       - name: Installation
         run: npm install
       - name: Lint and Prettier
-        run: npm run lint && npm run prettier:check
+        run: npm run lint:check && npm run prettier:check
       - name: Type Check
         run: npm run types:check
       - name: Unit Tests
