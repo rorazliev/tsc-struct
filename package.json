@@ -1,0 +1,53 @@
+{
+	"name": "tsc-struct",
+	"version": "0.0.1",
+	"description": "Data Structures in TypeScript",
+	"main": "build/index.js",
+	"types": "build/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"prepare": "husky install && npm run build",
+		"lint:check": "eslint --ext .ts",
+		"types:check": "tsc --pretty --noEmit",
+		"prettier:check": "prettier --check .",
+		"prettier:write": "prettier --write .",
+		"test": "jest",
+		"check:all": "npm run types:check && npm run lint:check && npm run prettier:check && npm run test && npm run build"
+	},
+	"keywords": [],
+	"homepage": "https://github.com/rorazliev/tsc-struct",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rorazliev/tsc-struct.git"
+	},
+	"bugs": {
+		"url": "https://github.com/rorazliev/tsc-struct/issues"
+	},
+	"author": {
+		"name": "Ruslan Orazliev",
+		"url": "https://github.com/rorazliev"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"lodash.isequal": "^4.5.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.19.3",
+		"@babel/core": "^7.19.3",
+		"@babel/preset-env": "^7.19.3",
+		"@babel/preset-typescript": "^7.18.6",
+		"@types/jest": "^29.1.1",
+		"@types/lodash.isequal": "^4.5.6",
+		"@types/node": "^18.7.23",
+		"@typescript-eslint/eslint-plugin": "^5.38.1",
+		"@typescript-eslint/parser": "^5.38.1",
+		"eslint": "^8.24.0",
+		"eslint-config-google": "^0.14.0",
+		"eslint-config-prettier": "^8.5.0",
+		"husky": "^8.0.0",
+		"jest": "^29.1.2",
+		"prettier": "^2.7.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.8.4"
+	}
+}
