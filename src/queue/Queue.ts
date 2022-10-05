@@ -38,10 +38,11 @@ export class Queue<T> {
 	/**
 	 * Adds the value at the end of the Queue<T>.
 	 * @param {T} value
-	 * @return {void}
+	 * @return {Queue<T>}
 	 */
-	enqeue(value: T): void {
+	enqeue(value: T): Queue<T> {
 		this.queue.addLast(value);
+		return this;
 	}
 	/**
 	 * Returns the value from the start of the Queue.
