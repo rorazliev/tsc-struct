@@ -34,7 +34,7 @@ describe('Queue<T>', () => {
 		expect(queue.peek()).toEqual(1);
 	});
 
-	it('should return the value from the start of the Queue.', () => {
+	it('should return the value from the start of the Queue<T>.', () => {
 		const queue: Queue<number> = new Queue<number>([1, 2, 3]);
 		expect(queue.peek()).toEqual(1);
 		expect(queue.contains(1)).toBeTruthy();
