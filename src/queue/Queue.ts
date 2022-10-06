@@ -45,7 +45,7 @@ export class Queue<T> {
 		return this;
 	}
 	/**
-	 * Returns the value from the start of the Queue.
+	 * Returns the value from the start of the Queue<T>.
 	 * @return {T | null}
 	 */
 	peek(): T | null {
