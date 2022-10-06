@@ -15,7 +15,7 @@ npm install tsc-struct
 ```typescript
 import { LinkedList } from 'tsc-struct';
 
-const list: LinkedList<number> = new LinkedList([1, 2, 3, 4]);
+const list: LinkedList<number> = new LinkedList<number>([1, 2, 3]);
 
 console.log(list.contains(1)); // -> true
 console.log(list.contains(4)); // -> false
