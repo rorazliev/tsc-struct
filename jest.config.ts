@@ -6,7 +6,7 @@ const config: Config.InitialOptions = {
 	coverageDirectory: './coverage/',
 	coveragePathIgnorePatterns: ['<rootDir>/node_modules/'],
 	testPathIgnorePatterns: ['<rootDir>/node_modules/'],
-	testRegex: '(/__test__/.*|(\\.|/)(test|spec))\\.ts$',
+	testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.ts$',
 	verbose: true,
 };
 
