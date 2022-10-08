@@ -2,7 +2,7 @@
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/rorazliev/tsc-struct?color=informational) ![GitHub](https://img.shields.io/github/license/rorazliev/tsc-struct?color=informational)
 
-`tsc-struct` is a package that provides strongly typed data structures such as `LinkedList<T>`, `Queue<T>`, and `Stack<T>`.
+`tsc-struct` is a package that provides strongly typed data structures such as `HashTable<T>`, `LinkedList<T>`, `Queue<T>`, and `Stack<T>`.
 
 ## Installation
 
