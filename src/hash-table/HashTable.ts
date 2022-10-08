@@ -33,20 +33,22 @@ export class HashTable<T> {
 	 * Adds a new value to the HashTable<T>.
 	 * @param {string} key
 	 * @param {value} value
+	 * @return {HashTable<T>}
 	 */
-	add(key: string, value: T): void {
+	add(key: string, value: T): HashTable<T> {
 		const hash: number = this.hash(key);
 		this.keys[key] = hash;
 		const ll: LinkedList<T> = this.buckets[hash];
-		const node: LinkedListNode<T> | null = ll.find(value);
+		const node: LinkedListNode<T> | null = ll.findByKey(key);
 		if (!node) {
-			ll.addLast(value);
+			ll.addLast(value, key);
 		} else {
 			node.value = value;
 		}
+		return this;
 	}
 	/**
-	 * Get the value from the HashTable<T>.
+	 * Gets the value from the HashTable<T>.
 	 * @param {string} key
 	 * @return {T | null}
 	 */
@@ -63,13 +65,14 @@ export class HashTable<T> {
 	 * @param {string} key
 	 * @return {void}
 	 */
-	remove(key: string): void {
+	remove(key: string): HashTable<T> {
 		const ll: LinkedList<T> = this.buckets[this.hash(key)];
 		delete this.keys[key];
 		const node: LinkedListNode<T> | null = ll.findByKey(key);
 		if (node) {
 			ll.remove(node.value);
 		}
+		return this;
 	}
 	/**
 	 * Get the length of the HashTable<T>.
