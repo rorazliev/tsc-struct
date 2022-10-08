@@ -84,6 +84,14 @@ describe('LinkedList<T>', () => {
 		expect(node?.next?.value).toEqual(3);
 	});
 
+	it('should find the node by its assoiated key.', () => {
+		const ll: LinkedList<number> = new LinkedList<number>();
+		expect(ll.findByKey('test')).toBeNull();
+		ll.addLast(1, 'test');
+		expect(ll.findByKey('test')?.value).toEqual(1);
+		expect(ll.findByKey('void')).toBeNull();
+	});
+
 	it('should remove all occurrences of the specified value from the LinkedList<T>.', () => {
 		const list: LinkedList<number> = new LinkedList<number>([1, 2, 1, 3]);
 		list.remove(1);

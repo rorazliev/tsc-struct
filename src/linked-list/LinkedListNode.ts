@@ -4,6 +4,10 @@
  */
 export class LinkedListNode<T> {
 	/**
+	 * The key associated with this node.
+	 */
+	key?: string;
+	/**
 	 * The value contained in the node.
 	 */
 	value: T;
@@ -15,9 +19,11 @@ export class LinkedListNode<T> {
 	 * Initializes a new instance of the LinkedListNode<T> class.
 	 * @param {T} value
 	 * @param {LinkedListNode<T> | null} next
+	 * @param {string} key
 	 */
-	constructor(value: T, next: LinkedListNode<T> | null = null) {
+	constructor(value: T, next: LinkedListNode<T> | null = null, key?: string) {
 		this.value = value;
 		this.next = next;
+		this.key = key;
 	}
 }

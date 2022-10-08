@@ -27,10 +27,15 @@ export class LinkedList<T> {
 	/**
 	 * Adds a new node at the start of the LinkedList<T>.
 	 * @param {T} value
+	 * @param {string} key
 	 * @return {LinkedList<T>}
 	 */
-	addFirst(value: T): LinkedList<T> {
-		const node: LinkedListNode<T> = new LinkedListNode<T>(value, this.head);
+	addFirst(value: T, key?: string): LinkedList<T> {
+		const node: LinkedListNode<T> = new LinkedListNode<T>(
+			value,
+			this.head,
+			key
+		);
 		this.head = node;
 		if (!this.tail) {
 			this.tail = node;
@@ -40,10 +45,11 @@ export class LinkedList<T> {
 	/**
 	 * Adds a new node at the end of the LinkedList<T>.
 	 * @param {T} value
+	 * @param {string} key
 	 * @return {LinkedList<T>}
 	 */
-	addLast(value: T): LinkedList<T> {
-		const node: LinkedListNode<T> = new LinkedListNode<T>(value);
+	addLast(value: T, key?: string): LinkedList<T> {
+		const node: LinkedListNode<T> = new LinkedListNode<T>(value, null, key);
 		if (!this.head) {
 			this.head = node;
 			this.tail = node;
@@ -107,6 +113,24 @@ export class LinkedList<T> {
 			current = current.next;
 		}
 		return output;
+	}
+	/**
+	 * Finds the node by a key associated with the node.
+	 * @param {string} key
+	 * @return {LinkedListNode<T> | null}
+	 */
+	findByKey(key: string): LinkedListNode<T> | null {
+		if (!this.head) {
+			return null;
+		}
+		let current: LinkedListNode<T> | null = this.head;
+		while (current) {
+			if (current.key === key) {
+				return current;
+			}
+			current = current.next;
+		}
+		return null;
 	}
 	/**
 	 * Removes all occurrences of the specified value from the LinkedList<T>.
