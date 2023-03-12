@@ -1,0 +1,23 @@
+name: 'ci'
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, reopened, edited, synchronize]
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Installation
+        run: npm install
+
+      - name: Code Quality
+        run: npm run check:all
+
+      - name: Unit Tests
+        run: npm run test:ci

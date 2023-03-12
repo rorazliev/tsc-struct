@@ -7,12 +7,14 @@
 	"scripts": {
 		"build": "tsc",
 		"prepare": "husky install && npm run build",
+		"lint": "eslint --ext .ts --fix",
 		"lint:check": "eslint --ext .ts",
 		"types:check": "tsc --pretty --noEmit",
-		"prettier:check": "prettier --check .",
-		"prettier:write": "prettier --write .",
-		"test": "jest",
-		"check:all": "npm run types:check && npm run lint:check && npm run prettier:check && npm run test && npm run build"
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"test": "jest --watch",
+		"test:ci": "jest --ci",
+		"check:all": "npm run types:check && npm run lint:check && npm run format:check"
 	},
 	"keywords": [
 		"computer-science",
