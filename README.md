@@ -1,6 +1,6 @@
 # Data Structures in TypeScript
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/rorazliev/tsc-struct?color=informational) ![GitHub](https://img.shields.io/github/license/rorazliev/tsc-struct?color=informational)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/rorazliev/tsc-struct?color=informational) ![Build Status](https://img.shields.io/github/actions/workflow/status/rorazliev/tsc-struct/ci.yml?branch=main) ![Coverage](https://img.shields.io/badge/coverage-100%25-success) ![License](https://img.shields.io/github/license/rorazliev/tsc-struct?color=informational)
 
 `tsc-struct` is a package that provides strongly typed data structures such as `HashTable<T>`, `LinkedList<T>`, `Queue<T>`, and `Stack<T>`.
 
